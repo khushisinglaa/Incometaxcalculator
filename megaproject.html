@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="megaproject.css">  
+</head>
+<body>
+  <script type="text/javascript" src="megaproject.js"></script>
+    <header>
+      
+        <h2>BAYI KHATHA</h2>
+        <nav>
+            <ul class="nav_links">
+            <li><a href="#">services &ensp;</a></li>
+            <li><a href="#">projects &ensp;</a></li>
+            <li><a href="#">about  &ensp;</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>contact us</button></a>
+    </header>
+    
+  
+       <h1>Income Tax Calculator</h1>
+       <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Basic Details')">Basic Details</button>
+        <button class="tablinks" onclick="openCity(event, 'Income Details')">Income Details</button>
+        <button class="tablinks" onclick="openCity(event, 'Deductions')">Deductions</button>
+        </div>
+       <form style="text-align: center; font-family: 'Lobster', cursive;">
+       <div id="Basics Details" class="tabcontent">
+        <h2 style="background-color:antiquewhite">Basic details</h2>
+        <p>Which financial year do you want to calculate taxes for? </p>
+        <label for="2021-2022">FY 2021-2022(April-March)</label>
+        <input id="2021-2022" type="radio" name="yo" value=""><br>
+        <label for="2020-2021">FY 2020-2021(April-March)</label>
+        <input id="2020-2021" type="radio" name="yo" value=""><br>
+        </div>
+       <div style="text-align:center"id="Income Details" class="tabcontent">
+        <h2 style="background-color:antiquewhite; ">Income Details</h2>
+        <p></p> 
+        <label style="font-size:large" for="income from salary">Income From Salary(FY)*</label><br>
+        <input type="number" id="income from salary" placeholder="ex.500000" required><br>
+        <label for="income from other source">Income From Other Source(if any)</label><br>
+        <input type="number" id="income from other source" name="" placeholder="ex.20000"><br>
+        <label for="capital gains">Capital Gains(Enter through Acts) </label><br>
+        <label for="text" id="capital gains">Interest Paid on Loan (Home/Education/Personal)</label><br>
+        <input type="number" id="capital gains" placeholder="ex.10%"><br>
+        <label for="short term capital gains" >Short Term Capital Gains(Montly)</label><br>
+        <input type="number" id="capital gains" value="" required><br>
+        <label for="long term capital gains" >Long Term Capital Gains(Yearly)</label><br>
+        <input type="number" id="capital gains" value="" required><br> 
+       </div>
+       <div id="Deductions" class="tabcontent">
+        <h2 style="background-color:antiquewhite">Deductions</h2>
+        <label for="deduction from salary">Deduction From Salary</label><br>
+        <input type="number" id="deduction from salary" placeholder="ex.5000" required><br>
+
+        <label for="tax paid">Tax Paid(Montly)*</label><br>
+        <input type="number" id="tax paid" placeholder="ex.5000" required><br>
+        <label for="tax paid">Tax Paid(Yearly)*</label><br>
+        <input type="number" id="tax paid" placeholder="ex.60000" required><br>
+       </div>
+       </form>
+       <div>
+       <h2 style="background-color: antiquewhite; text-align: center;">What is Income Tax Calculator?</h2>
+       <p style="text-align:justify">The Income tax calculator is an easy-to-use online tool that helps you estimate your taxes based on your income after the Union Budget is presented. We have updated our tool in line with the income tax changes proposed in the Union Budget 2022-23.(Read the highlights here)</p><br>
+       <h2 style="background-color:antiquewhite; text-align: center;">How to use the Income tax calculator for FY 2022-23 (AY 2023-24)?</h2>
+       <p style="text-align:justify">Following are the steps to use the tax calculator:<br>
+         1. Choose the financial year for which you want your taxes to be calculated.<br>
+         2. Select your age accordingly. Tax liability in India differs based on the age groups.<br>
+         3. Click on 'Go to Next Step'<br>
+         4. Enter your taxable salary i.e. salary after deducting various exemptions such as HRA, LTA, standard deduction, and so on. (if you want to know your tax liability under the old tax slabs)
+         Or else, just enter your salary i.e salary without availing exemptions such as HRA, LTA, standard deduction, professional tax and so on. (if you want to know your tax liability under the new tax slabs)<br>
+         5. Along with taxable salary, you must enter other details such as interest income, rental income, interest paid on home loan for rented, and interest paid on loan for self occupied property.<br>
+         6. For Income from Digital Assets, enter the net income ( Sale consideration less Cost of Acquisition), such income is taxed at 30% Plus applicable surcharge and cess.<br>
+         7. Click on 'Go to Next Step' again.<br>
+         8. In case, you want to calculate your taxes under the old tax slabs,you will have to enter your tax saving investments under section 80C, 80D, 80G, 80E and 80TTA.<br>
+         9. Click on 'Calculate' to get your tax liability. You will also be able to see a comparison of your pre-budget and post-budget tax liability (old tax slabs and new tax slabs).<br>
+          Note: Whichever field is not applicable, you can enter "0".
+        
+          You can even get your tax computation on your mail.
+       </p>
+       <h2 style="background-color:antiquewhite;text-align:center">Frequently Asked Questions ( FAQ’s )</h2>
+       <h4>#  How much tax should I pay on my salary?</h4>
+       <p>You will be required to pay a tax depending on the income slab you belong to.</p>
+       <h4>#  Income Tax Rates applicable for individuals under 60 years of age.</h4>
+       
+       <table>
+       <tr>
+        <th>Income Slab</th>
+        <th>Applicable Tax Rate</th>
+        
+      </tr>
+      <tr>
+        <td>Upto Rs 2.50 Lakh</td>
+        <td>Nil</td>
+      
+        
+      </tr>
+      <tr>
+        <td>Above  Rs 2.50 lakh and upto Rs 5 lakh</td>
+        <td>5%</td>
+
+      </tr>
+      <tr>
+        <td>Above RS 5 lakh and upto Rs 7.5 lakh</td>
+        <td>10%</td>
+       
+      </tr>
+      <tr>
+       <td>Above Rs 7.5 lakh and upto Rs 10 lakh</td>
+       <td>15%</td>
+       </tr>
+       <tr>
+         <td>Above Rs 10 lakh and upto Rs 12.5 lakh </td>
+         <td>20%</td>
+       </tr>
+       <tr>
+         <td>Above Rs 12.5 lakh and upto 15 lakh</td>
+         <td>25%</td>
+         </tr>
+         <tr>
+         <td>Above 15 lakh</td>
+         <td>30%</td>
+         </tr>
+       </table>
+       <p>Suppose you have a gross taxable incoe of 7.5 lakh after all the deductions/exemptions,your tax will be calculated as follows:</p>
+       <table>
+       <th>Income Slab</th>
+       <th>Applicable Tax Rate</th>
+       <th>Applicable Income</th>
+       <th>Tax(in Rs)</th>
+       <tr>
+         <td>Upto Rs 2.50 lakh </td>
+         <td>No tax</td>
+         <td>0</td>
+         <td>0</td>
+       </tr>
+       <tr>
+         <td>Above 5 lakh and upto Rs 7.5 lakh</td>
+         <td>10%</td>
+         <td>Rs2.50 lakh</td>
+         <td>12,500</td>
+         </tr>
+        <tr>
+         <td>Total income Tax Payable </td>
+         <td> </td>
+         <td> </td>
+         <td>37,500</td>
+        </tr>
+       </table>
+       <p>Hence,you will be required to pay a tax of Rs37,500(excluding cess)on your gross taxable income i.e Rs7.50 lakh</p>
+       <h4>#   What is the maximum non-taxable income limit?</h4>
+        <p>The maximum limit of non-taxable income for an individual is set at Rs 2.5 lakh. However, you can also get a rebate of Rs 2,500 under section 87A if you have a total income of less than Rs 3.5 lacs for FY 2018-19. From FY 2019-20 onwards, the rebate has been increased to Rs 12,500 for an income less than Rs 5 lakh. So, that means an individual earning less than 5 lakh will not be required to pay any income tax from FY 2019-20 onwards. If you have tax saving investments under section 80C of up to Rs 1.5 lakh then you will not have to pay any taxes till Rs 6.5 lakhs</p>
+        <h4>#  Does everyone have to file their income tax returns?</h4>
+        <p>If the income of an individual is below the basic exemption limit then he is not required to file income tax returns. Though those who have income less than Rs 2.5L and want to claim an income tax refund can only claim the refund by filing an ITR. Otherwise, it is mandatory to file income tax returns in any other case.</p>
+        <h4>#   Does the income tax calculator calculate for TDS?</h4>
+        <p>No, the income tax calculator does not compute the Tax Deducted at Source (TDS). However, it calculates your tax liability for the assessment year.</p>
+        <h4>#   What are the details you need when you're e-filing your income tax returns?</h4>
+        <p>1. Basic information such as PAN, Aadhar Card details, and current address.<br>
+
+          2. All the bank account details held in a financial year.<br>
+          
+          3. Income proofs like current salary details, income from investments (like FDs, savings bank account) etc.<br>
+          
+          4. All the deductions claimed under Section 80 or Chapter VI-A.<br>
+          
+          5. Tax payment details such as TDS and advance tax payments.<br></p>
+    
+
+
+    </div>
+     
+
+</body>
+</html>
